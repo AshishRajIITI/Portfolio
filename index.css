@@ -2,7 +2,7 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-img {
+.profilePic, .projectImg {
     margin-top: 30px;    
     border-radius: 50%;
     width: 120px;
@@ -50,4 +50,26 @@ img {
 
  a:hover {
     color: #f1f1f1;
-  }
+}
+
+.mainContent{
+    margin-left: 520px;
+}
+.aboutMe{
+    width: 80%;
+    margin: auto;  
+}
+
+.eachCard {
+    box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.4);   
+    width: 80%;
+    margin: auto;    
+}
+
+footer{
+    margin-top: 200px;
+    width: 100%;
+}
+footer img{
+    width: 100%;
+}
