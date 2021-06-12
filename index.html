@@ -11,14 +11,19 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="index.css" class="stylesheet" />
+
     <script
       src="https://kit.fontawesome.com/35be40aa6c.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="sideNavbar">
+
+   
+     <div class="sideNavbar">
       <div>
         <img class="profilePic" src="./assets/Ashish raj's Photo.jpeg" alt="" />
       </div>
@@ -42,10 +47,47 @@
         <a href="https://github.com/AshishRajIITI" target="_blank"><i class="fab fa-github"></i> &nbsp GitHub</a>
       </div>
 
-      <div class="row">            
-        <a href="https://auth.geeksforgeeks.org/user/ashishiiti19/profile" target="_blank"><i class="fas fa-laptop-code"></i>&nbsp GeeksForGeeks</a> 
-        <a href="#findMe"><i class="fas fa-user-plus"></i>&nbsp Find Me On</a>        
+      <div class="row" id="gfg">            
+        <a href="https://auth.geeksforgeeks.org/user/ashishiiti19/profile" target="_blank"><i class="fas fa-laptop-code"></i>&nbsp GFG</a> 
+        <a href="#findMe"><i class="fas fa-user-plus"></i>&nbsp Find Me</a>        
       </div>
+    </div> 
+
+    <div id="sideNavbarCollapse" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <div>
+          <img class="profilePic" src="./assets/Ashish raj's Photo.jpeg" alt="" />
+        </div>
+        <div class="name">
+          <h3>ASHISH RAJ</h3>
+          <h5>Aspiring Software Engineer</h5>
+        </div>
+  
+        <div class="row">        
+          <a href="#"><i class="fas fa-user"></i>&nbsp About</a>        
+          <a href="#skills"><i class="fas fa-envelope"></i>&nbsp Skills</a>        
+        </div>
+  
+        <div class="row">        
+          <a href="#projectList"><i class="fas fa-code"></i>&nbsp Projects</a>        
+          <a href="https://drive.google.com/file/d/1wiqB7H7z0-dYrEqxlMi6nQI8zhZKPUZu/view?usp=sharing" target="_blank"><i class="fas fa-file"></i>&nbsp Resume</a>
+        </div>
+  
+        <div class="row">               
+          <a href="https://www.linkedin.com/in/ashish-raj-0714151a8/" target="_blank"><i class="fab fa-linkedin"></i>&nbsp LinkedIn</a>    
+          <a href="https://github.com/AshishRajIITI" target="_blank"><i class="fab fa-github"></i> &nbsp GitHub</a>
+        </div>
+  
+        <div class="row" id="gfg">            
+          <a href="https://auth.geeksforgeeks.org/user/ashishiiti19/profile" target="_blank"><i class="fas fa-laptop-code"></i>&nbsp GFG</a> 
+          <a href="#findMe"><i class="fas fa-user-plus"></i>&nbsp Find Me</a>        
+        </div>
+      </div>
+    </div>
+
+    <div class="collapsebtncontainer">
+      <span style="font-size:60px;cursor:pointer; margin-left: 5px; padding: 20px; margin-bottom: 30px;" onclick="openNav()">&#9776; </span>
     </div>
 
     <div class="mainContent">    
@@ -133,7 +175,7 @@
           <div class="findMeInner" id="findMeInner">
             <div class="socialIcons"> <a  href="https://www.linkedin.com/in/ashish-raj-0714151a8/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
             <div class="socialIcons"> <a href = "mailto: ashishiiti19@gmail.com"><i class="fas fa-envelope" target="_blank"></i></a></div>       
-            <div class="socialIcons"> <a href="#"> <i class="fas fa-id-badge" target="_blank"></i>Codeforces</a></div>
+            <div class="socialIcons"> <a href="#"> <i class="fas fa-id-badge" target="_blank"></i></a></div>
             <div class="socialIcons"> <a href="https://www.instagram.com/ashish_r_19/" target="_blank"> <i class="fab fa-instagram-square"></i></a></div>
           </div>
       </div>
@@ -146,5 +188,17 @@
 
     </div>
       
+
+
+    <script>
+      function openNav() {
+        document.getElementById("sideNavbarCollapse").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("sideNavbarCollapse").style.width = "0%";
+      }
+    </script>
+
   </body>
 </html>
