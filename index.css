@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+
 body,p {
   font-family: "Lato", sans-serif;
 }
@@ -88,10 +91,101 @@ a:hover {
   margin-left: 520px;
   margin-right: 20px;
 }
+
+.myName {
+  background:white;
+  width:100%;
+  height:16vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align: left;
+  margin: auto;  
+  margin-left: 0;
+  margin-top: -25px;
+}
+.myName > h1{
+  font-family: 'Righteous', 'cursive';
+  background:url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;
+  letter-spacing:1px;
+  background-size:cover;
+  margin:auto;
+  margin-left: 0;
+  color:transparent;
+}
+
 .aboutMe {
   width: 80%;
   margin: auto;
 }
+
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
 .eachCard {
   box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.4);
   width: 80%;
@@ -220,6 +314,38 @@ header img {
   text-align: center;
   margin-bottom: 20px;
 }
+
+.myName {
+  background:white;
+  width:100%;
+  height:16vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align: left;
+  margin: auto;  
+  margin-left: 0;
+  margin-top: -25px;
+}
+.myName > h1{
+  font-family: 'Righteous', 'cursive';
+  background:url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  letter-spacing:0.5px;
+  background-size:cover;
+  margin:auto;
+  margin-left: 0;
+  color:transparent;
+}
+
+.aboutMe {
+  width: 90%;
+  font-size: 35px;
+}
+
 }
 
 
@@ -301,5 +427,38 @@ header img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.myName {
+  background:white;
+  width:100%;
+  height:13vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align: left;
+  margin: auto;  
+  margin-left: 0;
+  margin-top: -15px;
+}
+.myName > h1{
+  font-family: 'Righteous', 'cursive';
+  background:url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 46px;
+  letter-spacing:0.2px;
+  background-size:cover;
+  margin:auto;
+  margin-left: 0;
+  color:transparent;
+}
+
+.aboutMe {
+  margin-top: 10px;
+  width: 90%;
+  font-size: 35px;
+}
+
 }
 
